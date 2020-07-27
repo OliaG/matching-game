@@ -200,28 +200,11 @@ project to .NET Core 3.0 and the class library to .NET Standard 2.0.
    copy them from the old .NET Framework UI project to the new .NET Core 3.0 UI
    project. After that, you can get rid of the old project.
 
-## Using the WinForms designer for .NET Core projects
-
-WinForms designer for .NET Core projects is not yet available in Visual Studio.
-However there are two ways to work around it:
-
-1. You can keep your files linked (by just not performing the step above) and
-   copy them when the designer support is available. This way, you can modify
-   the files in your old .NET Framework WinForms project using the designer. And
-   the changes will be automatically reflected in the new .NET Core WinForms
-   project -- since they're linked.
-
-1. You can have two project files in the same directory as your WinForms
-   project: the old `.csproj` file from the existing .NET Framework project and
-   the new SDK-style `.csproj` file of the new .NET Core WinForms project.
-   You'll just have to unload and reload the project with corresponding project
-   file depending on whether you want to use the designer or not.
-
 [memory-game]: https://en.wikipedia.org/wiki/Concentration_(game)
 [core-installation]: https://dotnet.microsoft.com/download
 [api-port]: https://blogs.msdn.microsoft.com/dotnet/2018/08/08/are-your-windows-forms-and-wpf-applications-ready-for-net-core-3-0/
-[pkg-config]: https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference
+[pkg-config]: https://docs.microsoft.com/nuget/reference/migrate-packages-config-to-package-reference
 [compat-pack]: https://docs.microsoft.com/dotnet/core/porting/windows-compat-pack
 [api-analyzer]:https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/
 [compat-pack]:https://blogs.msdn.microsoft.com/dotnet/2017/11/16/announcing-the-windows-compatibility-pack-for-net-core/
-[standard]: https://docs.microsoft.com/en-us/dotnet/standard/net-standard
+[standard]: https://docs.microsoft.com/dotnet/standard/net-standard
